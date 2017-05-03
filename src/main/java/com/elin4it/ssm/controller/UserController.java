@@ -1,6 +1,8 @@
 package com.elin4it.ssm.controller;
 
+import com.elin4it.ssm.pojo.Student;
 import com.elin4it.ssm.pojo.User;
+import com.elin4it.ssm.service.StudentService;
 import com.elin4it.ssm.service.UserService;
 import com.elin4it.ssm.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,8 @@ public class UserController {
     //service类
     @Autowired
     private UserService userService;
+    @Autowired
+    private StudentService studentService;
 
     /**
      * 查找所用用户控制器方法
@@ -41,5 +45,20 @@ public class UserController {
 
         return modelAndView;
     }
+
+
+    @RequestMapping("/findStudent")
+    public ModelAndView findStudent() throws Exception{
+        System.out.println("==========into-findStudent");
+        //调用service方法得到Student信息
+        Student student = studentService.findStudent();
+        ModelAndView modelAndView = new ModelAndView();
+        //将得到的Student信息添加到ModelAndView中
+        modelAndView.addObject("student",student);
+        //设置响应的jsp视图
+        modelAndView.setViewName("findStudent");
+        return modelAndView;
+    }
+
 
 }
