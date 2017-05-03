@@ -51,8 +51,8 @@ public class UserController {
     public ModelAndView findStudent() throws Exception{
         System.out.println("==========into-findStudent");
         //调用service方法得到Student信息
-        Student student = studentService.findStudent();
-        Student student2 = studentService.findStudent2();
+        Student student = studentService.findStudent(1);
+        Student student2 = studentService.findStudent2(2);
         ModelAndView modelAndView = new ModelAndView();
         //将得到的Student信息添加到ModelAndView中
         modelAndView.addObject("student",student);

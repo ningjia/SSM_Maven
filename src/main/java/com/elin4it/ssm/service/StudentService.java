@@ -8,6 +8,6 @@ import java.util.List;
  * Created by jn on 2017/5/3.
  */
 public interface StudentService {
-    Student findStudent() throws Exception;
-    Student findStudent2() throws Exception;
+    Student findStudent(Integer studId) throws Exception;
+    Student findStudent2(Integer studId) throws Exception;
 }

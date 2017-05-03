@@ -4,13 +4,13 @@ package com.elin4it.ssm.pojo;
  * Created by jn on 2017/5/3.
  */
 public class Student {
-    private Integer STUDID;
+    private Integer studId;
 
-    private String NAME;
+    private String name;
 
-    private String EMAIL;
+    private String email;
 
-    private String PHONE;
+    private String phone;
 
     private ContactInfo contactInfo;
 
@@ -22,36 +22,35 @@ public class Student {
         this.contactInfo = contactInfo;
     }
 
-    public String getNAME() {
-        return NAME;
+    public Integer getStudId() {
+        return studId;
     }
 
-    public void setNAME(String NAME) {
-        this.NAME = NAME;
+    public void setStudId(Integer studId) {
+        this.studId = studId;
     }
 
-    public String getEMAIL() {
-        return EMAIL;
+    public String getName() {
+        return name;
     }
 
-    public void setEMAIL(String EMAIL) {
-        this.EMAIL = EMAIL;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPHONE() {
-        return PHONE;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPHONE(String PHONE) {
-        this.PHONE = PHONE;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public Integer getSTUDID() {
-
-        return STUDID;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setSTUDID(Integer STUDID) {
-        this.STUDID = STUDID;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

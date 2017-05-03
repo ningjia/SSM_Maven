@@ -4,33 +4,33 @@ package com.elin4it.ssm.pojo;
  * Created by jn on 2017/5/3.
  */
 public class ContactInfo {
-    private Integer STUDID;
+    private Integer studIo;
 
-    private String ADDRESS;
+    private String address;
 
-    private String ZIP;
+    private String zip;
 
-    public Integer getSTUDID() {
-        return STUDID;
+    public Integer getStudIo() {
+        return studIo;
     }
 
-    public void setSTUDID(Integer STUDID) {
-        this.STUDID = STUDID;
+    public void setStudIo(Integer studIo) {
+        this.studIo = studIo;
     }
 
-    public String getADDRESS() {
-        return ADDRESS;
+    public String getAddress() {
+        return address;
     }
 
-    public void setADDRESS(String ADDRESS) {
-        this.ADDRESS = ADDRESS;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getZIP() {
-        return ZIP;
+    public String getZip() {
+        return zip;
     }
 
-    public void setZIP(String ZIP) {
-        this.ZIP = ZIP;
+    public void setZip(String zip) {
+        this.zip = zip;
     }
 }

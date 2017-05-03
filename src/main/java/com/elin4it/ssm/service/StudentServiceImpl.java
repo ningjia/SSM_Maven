@@ -16,13 +16,13 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentMapper studentMapper;
 
-    public Student findStudent() throws Exception {
-        Student student = studentMapper.findStudentById(1);
+    public Student findStudent(Integer studId) throws Exception {
+        Student student = studentMapper.findStudentById(studId);
         return student;
     }
 
-    public Student findStudent2() throws Exception {
-        Student student = studentMapper.findStudentById2(2);
+    public Student findStudent2(Integer studId) throws Exception {
+        Student student = studentMapper.findStudentById2(studId);
         return student;
     }
 }
