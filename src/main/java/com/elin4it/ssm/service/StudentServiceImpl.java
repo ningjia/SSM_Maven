@@ -17,8 +17,12 @@ public class StudentServiceImpl implements StudentService {
     private StudentMapper studentMapper;
 
     public Student findStudent() throws Exception {
-        System.out.println("==========into-StudentServiceImpl");
         Student student = studentMapper.findStudentById(1);
+        return student;
+    }
+
+    public Student findStudent2() throws Exception {
+        Student student = studentMapper.findStudentById2(2);
         return student;
     }
 }

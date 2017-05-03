@@ -52,9 +52,11 @@ public class UserController {
         System.out.println("==========into-findStudent");
         //调用service方法得到Student信息
         Student student = studentService.findStudent();
+        Student student2 = studentService.findStudent2();
         ModelAndView modelAndView = new ModelAndView();
         //将得到的Student信息添加到ModelAndView中
         modelAndView.addObject("student",student);
+        modelAndView.addObject("student2",student2);
         //设置响应的jsp视图
         modelAndView.setViewName("findStudent");
         return modelAndView;

@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface StudentService {
     Student findStudent() throws Exception;
+    Student findStudent2() throws Exception;
 }

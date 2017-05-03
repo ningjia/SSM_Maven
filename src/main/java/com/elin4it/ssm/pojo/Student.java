@@ -12,6 +12,16 @@ public class Student {
 
     private String PHONE;
 
+    private ContactInfo contactInfo;
+
+    public ContactInfo getContactInfo() {
+        return contactInfo;
+    }
+
+    public void setContactInfo(ContactInfo contactInfo) {
+        this.contactInfo = contactInfo;
+    }
+
     public String getNAME() {
         return NAME;
     }
