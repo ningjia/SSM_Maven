@@ -12,6 +12,7 @@
         <tr>
             <td>${u.id}</td>
             <td>${u.username}</td>
+            <td>${u.address}</td>
         </tr>
     </c:forEach>
 
