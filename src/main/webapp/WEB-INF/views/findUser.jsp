@@ -6,7 +6,7 @@
     <title>FindUserPage</title>
 </head>
 <body>
-<h1>-findUser-</h1>
+<h1>FindUser</h1>
 <table>
     <c:forEach items="${users}" var="u">
         <tr>
