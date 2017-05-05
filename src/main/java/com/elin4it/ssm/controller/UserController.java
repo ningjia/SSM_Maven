@@ -53,10 +53,14 @@ public class UserController {
         //调用service方法得到Student信息
         Student student = studentService.findStudent(1);
         Student student2 = studentService.findStudent2(2);
+        Student student3 = studentService.findStudent3(1);
+        Student student4 = studentService.findStudent4(1);
         ModelAndView modelAndView = new ModelAndView();
         //将得到的Student信息添加到ModelAndView中
         modelAndView.addObject("student",student);
         modelAndView.addObject("student2",student2);
+        modelAndView.addObject("student3",student3);
+        modelAndView.addObject("student4",student4);
         //设置响应的jsp视图
         modelAndView.setViewName("findStudent");
         return modelAndView;

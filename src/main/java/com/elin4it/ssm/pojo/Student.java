@@ -1,5 +1,7 @@
 package com.elin4it.ssm.pojo;
 
+import java.util.List;
+
 /**
  * Created by jn on 2017/5/3.
  */
@@ -13,6 +15,8 @@ public class Student {
     private String phone;
 
     private ContactInfo contactInfo;
+
+    private List<Course> courses;
 
     public ContactInfo getContactInfo() {
         return contactInfo;
@@ -52,5 +56,13 @@ public class Student {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
     }
 }

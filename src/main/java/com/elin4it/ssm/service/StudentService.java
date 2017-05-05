@@ -10,4 +10,6 @@ import java.util.List;
 public interface StudentService {
     Student findStudent(Integer studId) throws Exception;
     Student findStudent2(Integer studId) throws Exception;
+    Student findStudent3(Integer studId) throws Exception;
+    Student findStudent4(Integer studId) throws Exception;
 }
