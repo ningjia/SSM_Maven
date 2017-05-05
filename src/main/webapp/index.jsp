@@ -2,14 +2,14 @@
 <html>
 <body>
 <h2>SSM(SpringMVC+Spring+Mybatis整合Demo)</h2>
-<table>
+<table border="1">
     <tr>
         <td><a href="/ssm/user/findUser">FindUser</a></td>
         <td>使用mybatis-generator生成相应文件,并查询User表的所有数据</td>
     </tr>
     <tr>
         <td><a href="/ssm/user/findStudent">FindStudent</a></td>
-        <td>手工编写Mapper文件,使用@Select注解来查询Students表的所有数据</td>
+        <td>手工编写Mapper文件,使用@Select注解来查询Students表的数据</td>
     </tr>
 </table>
 </body>
