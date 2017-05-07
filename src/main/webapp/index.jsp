@@ -11,6 +11,10 @@
         <td><a href="/ssm/user/findStudent">FindStudent</a></td>
         <td>手工编写Mapper文件,使用@Select注解来查询Students表的数据</td>
     </tr>
+    <tr>
+        <td><a href="/ssm/user/findEmployer">findEmployer</a></td>
+        <td>SqlProvider</td>
+    </tr>
 </table>
 </body>
 </html>

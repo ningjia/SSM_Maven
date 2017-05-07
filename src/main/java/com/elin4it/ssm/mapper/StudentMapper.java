@@ -1,11 +1,8 @@
 package com.elin4it.ssm.mapper;
 
 import com.elin4it.ssm.pojo.Student;
-import com.elin4it.ssm.pojo.ContactInfo;
-import org.apache.ibatis.annotations.One;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import com.elin4it.ssm.sqlproviders.EmployerSqlProvider;
+import org.apache.ibatis.annotations.*;
 
 /**
  * Created by jn on 2017/5/3.
@@ -57,6 +54,7 @@ public interface StudentMapper {
     )
     Student findStudentById3(Integer studId);
 
-
+@SelectProvider(type = EmployerSqlProvider.class, method = "findStudentById_Sql")
+    Student findStudentById_withSqlProvider(Integer studId);
 
 }

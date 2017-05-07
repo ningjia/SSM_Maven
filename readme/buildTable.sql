@@ -1,5 +1,4 @@
 DROP TABLE IF EXISTS `myTest`.`users`;
-
 CREATE TABLE `myTest`.`user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL COMMENT '用户名称',
@@ -26,3 +25,22 @@ CREATE TABLE `course` (
   `desc` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`courseId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `myTest`.`employer`;
+CREATE TABLE `myTest`.`employer` (
+  `employerId`int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) NOT NULL COMMENT '名称',
+  `birthday` date DEFAULT NULL COMMENT '生日',
+  `sex` char(1) DEFAULT NULL COMMENT '性别',
+  `companyId` int(11) DEFAULT NULL COMMENT '公司',
+  PRIMARY KEY (`employId`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `myTest`.`company`;
+CREATE TABLE `company` (
+  `companyId` int(11) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `desc` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`companyId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

@@ -1,7 +1,9 @@
 package com.elin4it.ssm.controller;
 
+import com.elin4it.ssm.pojo.Employer;
 import com.elin4it.ssm.pojo.Student;
 import com.elin4it.ssm.pojo.User;
+import com.elin4it.ssm.service.EmployerService;
 import com.elin4it.ssm.service.StudentService;
 import com.elin4it.ssm.service.UserService;
 import com.elin4it.ssm.service.UserServiceImpl;
@@ -23,6 +25,8 @@ public class UserController {
     private UserService userService;
     @Autowired
     private StudentService studentService;
+    @Autowired
+    private EmployerService employerService;
 
     /**
      * 查找所用用户控制器方法
@@ -66,5 +70,18 @@ public class UserController {
         return modelAndView;
     }
 
+    @RequestMapping("/findEmployer")
+    public ModelAndView findEmployer() throws Exception{
+        //调用service方法得到Employer信息
+        Employer employer = employerService.findEmployer(1);
+        List<Employer> employerList = employerService.findEmployers(1,"1");
+        ModelAndView modelAndView = new ModelAndView();
+        //将得到的Employer信息添加到ModelAndView中
+        modelAndView.addObject("employer",employer);
+        modelAndView.addObject("employerList",employerList);
+        //设置响应的jsp视图
+        modelAndView.setViewName("findEmployer");
+        return modelAndView;
+    }
 
 }
