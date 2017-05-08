@@ -14,7 +14,7 @@
 <div><b>性别:&nbsp;</b>${employer.sex}</div>
 <div><b>公司ID:&nbsp;</b>${employer.companyId}</div>
 <br>
-<h2>通过SqlProvider方式查询多行记录,并使用了多个检索参数</h2>
+<h2>通过SqlProvider方式查询多行记录,并使用了多个检索参数(通过Map对象来传输参数)</h2>
 <div>
     <table border="1">
         <tr>
@@ -24,6 +24,26 @@
             <th>公司ID</th>
         </tr>
         <c:forEach items="${employerList}" var="e">
+            <tr>
+                <td>${e.employerId}</td>
+                <td>${e.name}</td>
+                <td>${e.sex}</td>
+                <td>${e.companyId}</td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+<br>
+<h2>通过SqlProvider方式查询多行记录,并使用了多个检索参数(通过@param注解来传输参数)</h2>
+<div>
+    <table border="1">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>公司ID</th>
+        </tr>
+        <c:forEach items="${employerList2}" var="e">
             <tr>
                 <td>${e.employerId}</td>
                 <td>${e.name}</td>

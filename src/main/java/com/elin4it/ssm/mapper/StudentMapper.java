@@ -54,7 +54,5 @@ public interface StudentMapper {
     )
     Student findStudentById3(Integer studId);
 
-@SelectProvider(type = EmployerSqlProvider.class, method = "findStudentById_Sql")
-    Student findStudentById_withSqlProvider(Integer studId);
 
 }

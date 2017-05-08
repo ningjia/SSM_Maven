@@ -13,7 +13,7 @@
     </tr>
     <tr>
         <td><a href="/ssm/user/findEmployer">findEmployer</a></td>
-        <td>SqlProvider</td>
+        <td>手工编写Mapper文件,使用@SqlProvider注解来查询employer表的数据</td>
     </tr>
 </table>
 </body>

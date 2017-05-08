@@ -10,4 +10,5 @@ import java.util.List;
 public interface EmployerService {
     Employer findEmployer(Integer employerId) throws Exception;
     List<Employer> findEmployers(Integer companyId, String sex) throws Exception;
+    List<Employer> findEmployers2(Integer companyId, String sex) throws Exception;
 }

@@ -74,11 +74,13 @@ public class UserController {
     public ModelAndView findEmployer() throws Exception{
         //调用service方法得到Employer信息
         Employer employer = employerService.findEmployer(1);
-        List<Employer> employerList = employerService.findEmployers(1,"1");
+        List<Employer> employerList = employerService.findEmployers(null,"0");
+        List<Employer> employerList2 = employerService.findEmployers2(2,"0");
         ModelAndView modelAndView = new ModelAndView();
         //将得到的Employer信息添加到ModelAndView中
         modelAndView.addObject("employer",employer);
         modelAndView.addObject("employerList",employerList);
+        modelAndView.addObject("employerList2",employerList2);
         //设置响应的jsp视图
         modelAndView.setViewName("findEmployer");
         return modelAndView;

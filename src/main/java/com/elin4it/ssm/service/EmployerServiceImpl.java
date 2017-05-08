@@ -35,7 +35,19 @@ public class EmployerServiceImpl implements EmployerService {
      * @throws Exception
      */
     public List<Employer> findEmployers(Integer companyId, String sex) throws Exception {
-        List<Employer> list = employerMapper.findEmployersByConpanyAndSex(companyId,sex);
+        List<Employer> list = employerMapper.findEmployersByCompanyAndSex(companyId,sex);
+        return list;
+    }
+
+    /**
+     * 查询多行数据
+     * @param companyId
+     * @param sex
+     * @return
+     * @throws Exception
+     */
+    public List<Employer> findEmployers2(Integer companyId, String sex) throws Exception {
+        List<Employer> list = employerMapper.findEmployersByCompanyAndSex2(companyId,sex);
         return list;
     }
 }
