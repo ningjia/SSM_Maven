@@ -20,7 +20,7 @@
     <title>AssetsTest Page</title>
 </head>
 <body>
-<h1>AssetsTest</h1>
+<h1>验证Jquery是否正确加载</h1>
 <p>This is a paragraph.</p>
 <button id="btn1">追加文本</button>
 </body>

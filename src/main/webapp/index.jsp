@@ -17,7 +17,7 @@
     </tr>
     <tr>
         <td><a href="assetsTest.jsp">assetsTest</a></td>
-        <td>资源测试</td>
+        <td>资源测试(访问静态资源等)</td>
     </tr>
 </table>
 
