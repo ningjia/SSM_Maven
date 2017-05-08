@@ -14,4 +14,7 @@
     </bean>
     <!--控制器映射器和控制器适配器-->
     <mvc:annotation-driven></mvc:annotation-driven>
+
+    <!--配置静态资源映射,防止静态资源被拦截  -->
+    <mvc:resources location="/assets/scripts/" mapping="/scripts/**"></mvc:resources>
 </beans>
