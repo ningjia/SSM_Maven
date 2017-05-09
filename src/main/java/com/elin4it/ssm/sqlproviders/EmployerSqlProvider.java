@@ -56,4 +56,19 @@ public class EmployerSqlProvider {
         }.toString();
     }
 
+    /**
+     * SqlProvider方法,支持多个参数(使用@Param注解来传递参数值)
+     * @return
+     */
+    public String findEmployersByCompanyAndSex2_Sql()
+    {
+        return new SQL(){
+            {
+                SELECT("employerId, name, sex, companyId");
+                FROM("employer");
+                WHERE("companyId=#{param_companyId} and sex=#{param_sex}");
+            }
+        }.toString();
+    }
+
 }
